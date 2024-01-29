@@ -1,19 +1,19 @@
 {% include header.html %}
-
-<div class="wrap">
-    <div class="container container-left">
-        <div class="row">
-            <div class="col-md-2">
-                {% include sidebar_left.html %}
-            </div>
-            <div class="col-md-7">
-                {{ content }}
-            </div>
-            <div class="col-md-3">
-                {% include sidebar_right.html %}
+<section class="mainSection">
+    <div class="wrap">
+        <div class="container container-left">
+            <div class="row">
+                <section class="flexsection">
+                    <flexbox>
+                        {% include sidebar.html %}
+                    </flexbox>
+                    <flexbox class="wide">
+                        {{ content }}
+                    </flexbox>
+                </section>
             </div>
         </div>
-    </div>
 
-    {% include footer.html %}
-</div>
+    </div>
+</section>
+{% include footer.html %}

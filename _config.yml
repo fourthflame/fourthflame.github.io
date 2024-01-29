@@ -1,2 +1,25 @@
 name: fourthflame
 markdown: kramdown
+
+url: https://fourthflame.github.io
+baseurl: ""
+
+# default date_format
+date_format: 
+  title: "%m-%d-%Y"
+  archive: "%m-%d"
+  categories: "%m-%d-%Y"
+  tags: "%m-%d-%Y"
+
+# Language
+lan: "cn" 
+
+paginate: 6
+sidebar_len: 6
+
+highlighter: rouge
+google_analytics: G-8JN9B1ZGJK
+
+exclude: ['README.md', 'LICENSE', "*.bak"]
+
+permalink: /blog/:year/:month/:day/:title
