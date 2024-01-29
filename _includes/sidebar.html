@@ -24,6 +24,7 @@
 <!-- 分类 -->
 <div class="sidebar well">
     <h1>{{ trans.hot_categories }}</h1>
+    <ul>
     {% assign max_category_count = 0 %}
     {% for category in site.categories %}
         {% if category[1].size > max_category_count %}
@@ -46,11 +47,13 @@
             {% break %}
         {% endif %}
     {% endfor %}
+    </ul>
 </div>
 
 <!-- 标签 -->
 <div class="sidebar well">
     <h1>{{ trans.hot_tags }}</h1>
+    <ul>
     {% assign max_tag_count = 0 %}
     {% for tag in site.tags %}
         {% if tag[1].size > max_tag_count %}
@@ -73,17 +76,18 @@
             {% break %}
         {% endif %}
     {% endfor %}
+    </ul>
 </div>
 
 
 <!-- 相关链接 -->
 <div class="sidebar well">
     <h1>{{ trans.related_links }}</h1>
-    <u>
+    <ul>
         {% for link in site.data.related_sites %}
             <li>
                 <a href="{{ site.baseurl }}/{{ link.url }}" target="_blank">{{ link.title }}</a>
             </li>
         {% endfor %}
-    </u>
+    </ul>
 </div>

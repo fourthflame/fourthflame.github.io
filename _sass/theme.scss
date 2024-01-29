@@ -13,6 +13,22 @@ body {
     max-width: 1280px;
 }
 
+.header-content {
+    margin: auto;
+    max-width: 1280px;
+}
+
+.header-content {
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.margin0 {
+    margin: 0px;
+}
+
 .wrap {
     position:relative;
     min-height:100%;
@@ -27,7 +43,7 @@ body {
 
 
 flexbox {
-    flex: 1 110px;
+    flex: 1 150px;
     margin: 1em;
 }
 
@@ -190,9 +206,9 @@ flexbox.wide {
     background-color: $nav-bar-open-a-background-color;
 }
 
+
 .navbar-custom .navbar-brand {
     color: $nav-bar-brand-color;
-    width: 280px;
     font-size: 20px;
     text-align: center;
 }
