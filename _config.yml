@@ -14,12 +14,13 @@ date_format:
 # Language
 lan: "cn" 
 
-paginate: 6
-sidebar_len: 6
+paginate: 5
+sidebar_len: 5
 
 highlighter: rouge
 google_analytics: G-8JN9B1ZGJK
 
 exclude: ['README.md', 'LICENSE', "*.bak"]
+plugins: [jekyll-paginate]
 
 permalink: /blog/:year/:month/:day/:title

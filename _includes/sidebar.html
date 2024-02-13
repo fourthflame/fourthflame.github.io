@@ -42,6 +42,9 @@
                     {% assign category_display_count = category_display_count | plus: 1 %}
                 </li>
             {% endif %}
+            {% if category_display_count >= site.sidebar_len %}
+                {% break %}
+            {% endif %}
         {% endfor %}
         {% if category_display_count >= site.sidebar_len %}
             {% break %}
@@ -71,6 +74,9 @@
                     {% assign tag_display_count = tag_display_count | plus: 1 %}
                 </li>
             {% endif %}
+            {% if tag_display_count >= site.sidebar_len %}
+                {% break %}
+            {% endif %}
         {% endfor %}
         {% if tag_display_count >= site.sidebar_len %}
             {% break %}
@@ -86,7 +92,7 @@
     <ul>
         {% for link in site.data.related_sites %}
             <li>
-                <a href="{{ site.baseurl }}/{{ link.url }}" target="_blank">{{ link.title }}</a>
+                <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
             </li>
         {% endfor %}
     </ul>

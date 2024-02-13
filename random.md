@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+---
+layout: none
+title: 随便逛逛
+---
 <html lang="ch">
 
 <head>
@@ -21,6 +24,17 @@
 
         gtag('config', 'G-8JN9B1ZGJK');
     </script>
+
+	<script>
+		var posts = [];
+		{% for post in site.posts %}
+		posts.push("{{ post.url }}");
+		{% endfor %}
+
+		document.write("<meta http-equiv=\"refresh\" content=\"1;url=");
+		document.write(posts[Math.floor(Math.random() * posts.length)]);
+		document.write("\">");
+	</script>
 </head>
 
 <body>
@@ -59,3 +73,23 @@
             </div>
         </div>
     </div>
+
+<section class="mainSection">
+    <div class="wrap">
+        <div class="container container-left">
+            <div class="row">
+                <section class="flexsection">
+                    <flexbox>
+                        {% include sidebar.html %}
+                    </flexbox>
+                    <flexbox class="wide">
+                        <h1>Redirecting to a random post...</h1>
+                    </flexbox>
+                </section>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% include footer.html %}
+
