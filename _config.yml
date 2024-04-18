@@ -14,8 +14,8 @@ date_format:
 # Language
 lan: "cn" 
 
-paginate: 5
-sidebar_len: 5
+paginate: 10
+sidebar_len: 6
 
 highlighter: rouge
 google_analytics: G-8JN9B1ZGJK
