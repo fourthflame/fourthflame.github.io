@@ -3,7 +3,7 @@ layout: default
 title: 统计
 ---
 <div class="well article">
-    <a id="{{ category-analysis }}" style="position: relative; top: -50px"></a>
+    <a id="{{ category-analytics }}" style="position: relative; top: -50px"></a>
     <h2>分类</h2>
     <!-- Find the max category count -->
     {% assign sorted_categories = site.categories | sort %}
@@ -26,7 +26,7 @@ title: 统计
 </div>
 
 <div class="well article">
-    <a id="{{ tag-analysis }}" style="position: relative; top: -50px"></a>
+    <a id="{{ tag-analytics }}" style="position: relative; top: -50px"></a>
     <h2>标签</h2>
     <!-- Find the max tag count -->
     {% assign sorted_tags = site.tags | sort %}
@@ -49,7 +49,7 @@ title: 统计
 </div>
 
 <div class="well article">
-    <a id="{{ date-analysis }}" style="position: relative; top: -50px"></a>
+    <a id="{{ date-analytics }}" style="position: relative; top: -50px"></a>
     <h2>日期</h2>
     {%for post in site.posts %}
         <!-- Display year -->
@@ -64,7 +64,7 @@ title: 统计
                 {% assign year_count = 0 %}
             {% endif %}
         {% endif %}
-        <!-- Analysis month -->
+        <!-- analytics month -->
         {% if post.previous != nil %}
             {% capture month %}{{ post.date | date: '%B' }}{% endcapture %}
             {% if post.next == nil %}
@@ -103,7 +103,7 @@ title: 统计
 </div>
 
 <div class="well article">
-    <a id="{{ total-analysis }}" style="position: relative; top: -50px"></a>
+    <a id="{{ total-analytics }}" style="position: relative; top: -50px"></a>
     <h2>总数</h2>
     <ul>
         <li>总文章数：{{ site.posts | size }}</li>
