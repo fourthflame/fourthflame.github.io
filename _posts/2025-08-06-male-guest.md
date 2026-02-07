@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "近期的感情生活"
-date:   2025-04-12 22:43:00 -0500
+date:   2025-08-06 22:43:00 -0500
 categories: random writing drunk
 tags: dating life
 ---
